@@ -9,160 +9,207 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/82bb699038.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="row">
-    <div class="col-md-2">
-      <ul>
-        <li>
-          <a href="#">
+    <div class="col-md-2 bg-primary">
+      <nav class="navbar">
+        <ul class="navbar-nav">
+          <a class="navbar-brand d-flex align-items-center text-white" href="#">
             <div>
               <span>
-                icon
+                <i class="far fa-laugh-wink text-white"></i>
               </span>
             </div>
             <div>sb admin <span>2</span></div>
           </a>
-        </li>
-        <li></li>
-        <a href="#">cashboard</a>
-        </li>
-        <div>
-          <h6>interface</h6>
-        </div>
-        <li>
-          <a href="#">components</a>
-        </li>
-        <li>
-          <a href="#">utilities</a>
-        </li>
-        <div>
-          <h6>addons</h6>
-        </div>
-        <li>
-          <a href="#">pages</a>
-        </li>
-        <li>
-          <a href="#">charts</a>
-        </li>
-        <li>
-          <a href="#">tables</a>
-        </li>
-      </ul>
-      <div>
-        <a href="#">icon back</a>
+          <li class="nav-item"></li>
+          <a class="nav-link text-white" href="#">cashboard</a>
+          </li>
+          <div>
+            <h6>interface</h6>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">components</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">utilities</a>
+          </li>
+          <div>
+            <h6>addons</h6>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">pages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">charts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">tables</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="d-flex justify-content-center">
+        <a id="btn-rounded" href="#">
+          <i id="icon" class="fas fa-chevron-left"></i>
+        </a>
       </div>
-      <div>
-        <span>icon</span>
-        <p>sb admin pro is packed with premium features, components, and more!</p>
-        <a href="#">upgrade to pro!</a>
+      <div class="text-center bg-dark rounded">
+        <img src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_rocket.svg" alt="rocket"
+          width="50" height="50">
+        <p class="text-white-50">sb admin pro is packed with premium features, components, and more!</p>
+        <a class="btn btn-success" href="#">upgrade to pro!</a>
       </div>
     </div>
-    <div class="col-md-10">
-      <nav>
-        <div>
-          <form action="#">
-            <input type="text" placeholder="Search">
-            <div>
-              <button type="submit">go</button>
+
+    <div class="col-md-10 bg-light">
+      <nav class="navbar navbar-expand-sm bg-white navbar-light">
+        <form class="input-group" action="#">
+          <div class="form-inline">
+            <input class="form-control" type="text" placeholder="Search for...">
+            <div class="input-group-append">
+              <button class="btn btn-success" type="submit">go</button>
             </div>
-          </form>
-          <ul>
-            <li>
-              <a href="#">notice</a>
-            </li>
-            <li>
-              <a href="#">mail</a>
-            </li>
-          </ul>
-          <div>
-            <a href="#">
-              <div>name</div>
-              <div>avatar</div>
-            </a>
           </div>
-        </div>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-bell"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+        <a class="d-flex align-items-center" href="#">
+          <span class="text-nowrap">full name</span>
+          <div class="pl-2">
+            <img src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_profile.svg" alt="avatar"
+              width="32" height="32">
+          </div>
+        </a>
       </nav>
       <div>
-        <div>
+        <div class="d-flex align-items-center justify-content-between mb-4">
           <h3>dashboard</h3>
-          <button>generate report</button>
+          <button class="d-none d-sm-inline-block btn btn-primary ml-auto ">generate report</button>
         </div>
-        <div>
-          <div>
-            <h6>earnings (monthly)</h6>
-            <span>$40,000</span>
-          </div>
-          <div>
-            <h6></h6>earnings (annual)</h6>
-            <span>215,000</span>
-          </div>
-          <div>
-            <h6>tasks</h6>
-            <span>50%</span>
-          </div>
-          <div>
-            <h6>pending requests</h6>
-            <span>18</span>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div>
-          <h5>earning overview</h5>
-        </div>
-        <div>
-          <h5>revenue sources</h5>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div>
-            <h5>projects</h5>
-          </div>
-          <div>
-            <div>
-              <p>primary/p>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <h6>earnings (monthly)</h6>
+              <span>$40,000</span>
             </div>
-            <div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <h6>hearnings (annual)</h6>
+              <span>215,000</span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <h6>tasks</h6>
+              <span>50%</span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <h6>pending requests</h6>
+              <span>18</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header">
+              <h5>earning overview</h5>
+            </div>
+            <div class="card-body"></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h5>Revenue Sources</h5>
+            </div>
+            <div class="card-body"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h5>projects</h5>
+            </div>
+            <div class="card-body"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <p>primary</p>
+            </div>
+            <div class="col-md-6">
               <p>success</p>
             </div>
-            <div>
+            <div class="col-md-6">
               <p>info</p>
             </div>
-            <div>
+            <div class="col-md-6">
               <p>warning</p>
             </div>
-            <div>
+            <div class="col-md-6">
               <p>danger</p>
             </div>
-            <div>
+            <div class="col-md-6">
               <p>secondary</p>
             </div>
-            <div>
+            <div class="col-md-6">
               <p>light</p>
             </div>
-            <div>
+            <div class="col-md-6">
               <p>dark</p>
             </div>
           </div>
         </div>
-        <div>
-          <div>
-            <h5>illustrations</h5>
-          <p>Add some quality, svg illustrations to your project courtesy of unDraw, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!</p>
-          <a href="#">Browse Illustrations on unDraw</a>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h5>illustrations</h5>
+            </div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ratione maxime neque laboriosam
+                pariatur consequuntur unde, iusto delectus totam error aut, fuga doloribus rerum esse dolore placeat?
+                Officiis, nobis molestiae.</p>
+              <a href="#">Browse Illustrations on unDraw</a>
+            </div>
           </div>
-          <div>
-            <h5>Development Approach</h5>
-            <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor page performance. Custom CSS classes are used to create custom components and custom utility classes.</p>
-            <p>Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.</p>
+          <div class="card">
+            <div class="card-header">
+              <h5>Development Approach</h5>
+            </div>
+            <div class="card-body">
+              <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor
+                page
+                performance. Custom CSS classes are used to create custom components and custom utility classes.</p>
+              <p>Before working with this theme, you should become familiar with the Bootstrap framework, especially the
+                utility classes.</p>
+            </div>
           </div>
         </div>
       </div>
       <footer>
-        <span>Copyright © Your Website 2020</span>
+        <div class="text-center">
+          <small>Copyright © Your Website 2020</small>
+        </div>
       </footer>
     </div>
   </div>

@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+#btn-rounded {
+  display: block;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background-color: rgba(43,52,69,0.25);
+  color: white;
+  text-align: center;
+}
+
+#icon {
+  line-height: 2.625rem;
+}
