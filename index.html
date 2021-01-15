@@ -10,17 +10,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="Style.css">
+  <script src="https://kit.fontawesome.com/82bb699038.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div class="d-flex" id="wrapper">
     <!-- Sidebar -->
-    <ul id="list-group" class="navbar-nav bg-light border-right">
+    <ul id="list-group" class="navbar-nav bg-light border-right d-none d-md-block">
       <!-- Sidebar - Brand -->
-      <a class="navbar-brand px-4 py-3 m-0" href="#">Brand name</a>
+      <a class="navbar-brand px-4 py-3 m-0" href="#">
+        <i class="far fa-smile-wink"></i>
+        SB ADMIN <span>2</span>
+      </a>
       <!-- Nav item - Dashboard -->
       <li class="nav-item list-item">
-        <a class="nav-link px-4 py-2" href="#">Dashboard</a>
+        <a class="nav-link px-4 py-2" href="#">
+          <i class="fas fa-tachometer-alt"></i>
+          Dashboard
+        </a>
       </li>
       <!-- Nav heading Interface -->
       <div class="nav-heading">
@@ -28,11 +35,17 @@
       </div>
       <!-- Nav item - Components -->
       <li class="nav-item list-item">
-        <a class="nav-link px-4 py-3" href="#">Components</a>
+        <a class="nav-link px-4 py-3" href="#">
+          <i class="fas fa-cog"></i>
+          Components
+        </a>
       </li>
       <!-- Nav item - Utilities -->
       <li class="nav-item list-item">
-        <a class="nav-link px-4 py-3" href="#">Utilities</a>
+        <a class="nav-link px-4 py-3" href="#">
+          <i class="fas fa-wrench"></i>
+          Utilities
+        </a>
       </li>
       <!-- Nav heading Addons -->
       <div class="nav-heading">
@@ -40,26 +53,39 @@
       </div>
       <!-- Nav item - Pages -->
       <li class="nav-item list-item">
-        <a class="nav-link px-4 py-3" href="#">Pages</a>
+        <a class="nav-link px-4 py-3" href="#">
+          <i class="fas fa-folder"></i>
+          Pages
+        </a>
       </li>
       <!-- Nav item - Charts -->
       <li class="nav-item list-item">
-        <a class="nav-link px-4 py-3" href="#">Charts</a>
+        <a class="nav-link px-4 py-3" href="#">
+          <i class="fas fa-chart-area"></i>
+          Charts
+        </a>
       </li>
       <!--Nav item - Tables -->
       <li class="nav-item list-item">
-        <a class="nav-link px-4 py-3" href="#">Tables</a>
+        <a class="nav-link px-4 py-3" href="#">
+          <i class="fas fa-table"></i>
+          Tables
+        </a>
       </li>
       <!-- Sidebar message -->
       <div class="text-center pt-4">
         <!-- Sidebar toggler -->
         <div>
-          <button type="button">Button</button>
+          <button id="circle-button" class="btn rounded-circle" type="button">
+            <i class="fas fa-chevron-left"></i>
+          </button>
         </div>
-        <img src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_rocket.svg" alt="Rocket icon"
-          width="50" height="50">
-        <p><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
-        <button>Upgrade to Pro!</button>
+        <div class="bg-info rounded p-3 m-3">
+          <img src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_rocket.svg" alt="Rocket icon"
+            width="50" height="50">
+          <p><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
+          <button class="btn btn-success" type="button">Upgrade to Pro!</button>
+        </div>
       </div>
     </ul>
     <!-- End of Sidebar -->
@@ -67,7 +93,7 @@
     <!-- Main Content -->
     <div>
       <!-- Topbar -->
-      <nav class="navbar navbar-expand-md bg-light navbar-light border-bottom">
+      <nav class="navbar navbar-expand-md bg-light navbar-light border-bottom shadow">
         <!-- Toggler Button-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -76,23 +102,28 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <!-- Topbar Search -->
           <form class="form-inline" action="#">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search for...">
-            <button class="btn btn-success" type="submit">Search</button>
+            <input class="form-control mr-md-2 my-2 my-md-0" type="text" placeholder="Search for...">
+            <button class="btn btn-success mb-2 mb-md-0" type="submit">Search</button>
           </form>
           <ul class="navbar-nav ml-md-auto">
             <!-- Nav Item - Alert -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Bell</a>
+              <a class="nav-link" href="#">
+                <i class="fas fa-bell"></i>
+              </a>
             </li>
             <!-- Nav Item - Messages -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Mail</a>
+              <a class="nav-link" href="#">
+                <i class="fas fa-envelope"></i>
+              </a>
             </li>
             <!--Nav Item - User information-->
-            <li class="nav-item">
+            <li class="nav-item ml-md-3">
               <a class="nav-link" href="#">
                 <span>User name</span>
-                <img src="#=" avatar">
+                <img src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_profile.svg" avatar"
+                  width="32" height="32">
               </a>
             </li>
           </ul>
@@ -102,13 +133,20 @@
       <!-- Page Content -->
       <div class="p-3">
         <!-- Page Heading -->
-        <div class="d-flex align-items-center justify-content-between">
-          <h1>Dashboard</h1>
-          <button type="button">Generate Report</button>
+        <div class="row py-3">
+          <div class="col-md-6">
+            <h1>Dashboard</h1>
+          </div>
+          <div class="col-md-6">
+            <a class="btn btn-primary" type="button">
+              <i class="fas fa-download"></i>
+              Generate Report
+            </a>
+          </div>
         </div>
         <!-- Earning Card -->
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
+        <div class="row py-3">
+          <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
               <div class="card-body">
                 <h5>Earning (monthly)</h5>
@@ -116,7 +154,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
               <div class="card-body">
                 <h5>Earning (annual)</h5>
@@ -124,7 +162,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
               <div class="card-body">
                 <h5>Tasks</h5>
@@ -132,7 +170,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
               <div class="card-body">
                 <h5>Pending requests</h5>
@@ -142,12 +180,12 @@
           </div>
         </div>
         <!-- Chart -->
-        <div class="row">
+        <div class="row py-3">
           <!-- Area Chart -->
-          <div class="col-lg-8">
+          <div class="col-lg-8 mb-3">
             <div class="card">
               <div class="card-header">
-                <h2>Earnings Overview</h2>
+                <h4>Earnings Overview</h4>
               </div>
               <div class="card-body">
                 <img src="/Images/tải xuống (2).png" alt="Line chart" width="100%" height="auto">
@@ -155,57 +193,66 @@
             </div>
           </div>
           <!-- Pie Chart -->
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-3">
             <div class="card">
               <div class="card-header">
-                <h2>Revenue Sources</h2>
+                <h4>Revenue Sources</h4>
               </div>
               <div class="card-body ">
                 <img src="/Images/tải xuống (1).png" alt="Pie chart" width="100%" height="auto">
-                <ul class="list-unstyled d-flex justify-content-center">
-                  <li>Direct</li>
-                  <li>Social </li>
-                  <li>Referral</li>
+                <ul class="list-unstyled d-flex justify-content-center mt-3">
+                  <li class="mr-2 text-nowrap">
+                    <i class="fas fa-circle text-primary"></i>
+                    Direct
+                  </li>
+                  <li class="mr-2 text-nowrap">
+                    <i class="fas fa-circle text-muted"></i>
+                    Social
+                  </li>
+                  <li class="mr-2 text-nowrap">
+                    <i class="fas fa-circle text-danger"></i>
+                    Referral
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
         <!-- Content -->
-        <div class="row">
+        <div class="row py-3">
           <div class="col-lg-6">
             <!-- Projects Card -->
-            <div class="card">
+            <div class="card mb-3">
               <div class="card-header">
-                <h2>Projects</h2>
+                <h4>Projects</h4>
               </div>
               <div class="card-body">
                 <h4 class="small font-weight-bold">
                   Server Migration
                   <span class="float-right">20%</span>
                 </h4>
-                <div class="progress">
+                <div class="progress mb-3">
                   <div class="progress-bar" style="width:20%"></div>
                 </div>
                 <h4 class="small font-weight-bold">
                   Sales Tracking
                   <span class="float-right">40%</span>
                 </h4>
-                <div class="progress">
+                <div class="progress mb-3">
                   <div class="progress-bar bg-success" style="width:40%"></div>
                 </div>
                 <h4 class="small font-weight-bold">
                   Customer Database
                   <span class="float-right">60%</span>
                 </h4>
-                <div class="progress">
+                <div class="progress mb-3">
                   <div class="progress-bar bg-warning" style="width:60%"></div>
                 </div>
                 <h4 class="small font-weight-bold">
                   Payout Details
                   <span class="float-right">80%</span>
                 </h4>
-                <div class="progress">
+                <div class="progress mb-3">
                   <div class="progress-bar bg-danger" style="width:80%"></div>
                 </div>
                 <h4 class="small font-weight-bold">
@@ -218,8 +265,8 @@
               </div>
             </div>
             <!-- Color Cards -->
-            <div class="row">
-              <div class="col-md-6">
+            <div class="row mb-3">
+              <div class="col-md-6 mb-3">
                 <div class="card bg-primary">
                   <div class="card-body text-white">
                     Primary
@@ -229,7 +276,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 mb-3">
                 <div class="card bg-success">
                   <div class="card-body text-white">
                     Success
@@ -239,7 +286,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 mb-3">
                 <div class="card bg-info">
                   <div class="card-body text-white">
                     Infor
@@ -249,7 +296,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 mb-3">
                 <div class="card bg-warning">
                   <div class="card-body text-white">
                     Warning
@@ -259,7 +306,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 mb-3">
                 <div class="card bg-danger">
                   <div class="card-body text-white">
                     Danger
@@ -269,7 +316,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 mb-3">
                 <div class="card bg-secondary">
                   <div class="card-body text-white">
                     Secondary
@@ -279,7 +326,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 mb-3">
                 <div class="card bg-light">
                   <div class="card-body">
                     Light
@@ -289,7 +336,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 mb-3">
                 <div class="card bg-dark">
                   <div class="card-body text-white">
                     Dark
@@ -300,17 +347,17 @@
                 </div>
               </div>
             </div>
-              
           </div>
           <div class="col-lg-6">
             <!-- Illustrations Content -->
-            <div class="card">
+            <div class="card mb-3">
               <div class="card-header">
-                <h2>Illustrations</h2>
+                <h4>Illustrations</h4>
               </div>
               <div class="card-body">
                 <div class="text-center">
-                  <img src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_posting_photo.svg" alt="Smart device images" width="70%" height="auto">
+                  <img src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_posting_photo.svg"
+                    alt="Smart device images" width="70%" height="auto">
                 </div>
                 <p>Add some quality, svg illustrations to your project courtesy of unDraw, a constantly updated
                   collection
@@ -319,9 +366,9 @@
               </div>
             </div>
             <!-- Development Approach Content -->
-            <div class="card">
+            <div class="card mb-3">
               <div class="card-header">
-                <h2>Development Approach</h2>
+                <h4>Development Approach</h4>
               </div>
               <div class="card-body">
                 <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor
@@ -347,7 +394,9 @@
   </div>
   <!-- End of Main Content -->
   <!-- Scroll to Top Button -->
-  <a href="#">Back to top</a>
+  <a id="btn-back" class="btn rounded" href="#">
+    <i class="fas fa-chevron-up"></i>
+  </a>
 </body>
 
 </html>
